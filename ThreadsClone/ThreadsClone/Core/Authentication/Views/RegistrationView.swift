@@ -35,6 +35,7 @@ struct RegistrationView: View {
                     .modifier(ThreadsTextFieldModifier())
                 
                 TextField("Enter your username", text: $viewModel.userName)
+                    .textInputAutocapitalization(.never)
                     .modifier(ThreadsTextFieldModifier())
             })
             .padding(.horizontal)

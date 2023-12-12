@@ -48,6 +48,8 @@
 		AC4BD00A2B0D22520070F1B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4BD0092B0D22520070F1B8 /* Preview Assets.xcassets */; };
 		ACA9AB492B2887690094D448 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACA9AB482B2887690094D448 /* GoogleService-Info.plist */; };
 		ACA9AB4B2B28AF770094D448 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9AB4A2B28AF770094D448 /* User.swift */; };
+		ACA9AB4F2B28D9BB0094D448 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9AB4E2B28D9BB0094D448 /* UserService.swift */; };
+		ACA9AB522B28DAD70094D448 /* PofileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9AB512B28DAD70094D448 /* PofileViewModel.swift */; };
 		ACEA93462B1FA97E004EE2E9 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA93452B1FA97E004EE2E9 /* ThreadsTabView.swift */; };
 		ACEA93492B1FACC4004EE2E9 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA93482B1FACC4004EE2E9 /* FeedView.swift */; };
 		ACEA934C2B1FAD04004EE2E9 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA934B2B1FAD04004EE2E9 /* ExploreView.swift */; };
@@ -78,6 +80,8 @@
 		AC4BD0092B0D22520070F1B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACA9AB482B2887690094D448 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACA9AB4A2B28AF770094D448 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ACA9AB4E2B28D9BB0094D448 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		ACA9AB512B28DAD70094D448 /* PofileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PofileViewModel.swift; sourceTree = "<group>"; };
 		ACEA93452B1FA97E004EE2E9 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 		ACEA93482B1FACC4004EE2E9 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		ACEA934B2B1FAD04004EE2E9 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 		AC3501F42B0F930300DA0C52 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				ACA9AB4E2B28D9BB0094D448 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -294,6 +299,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		ACA9AB502B28DAC80094D448 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACA9AB512B28DAD70094D448 /* PofileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		ACEA93442B1FA963004EE2E9 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +350,7 @@
 		ACEA93532B1FADB3004EE2E9 /* Profile  */ = {
 			isa = PBXGroup;
 			children = (
+				ACA9AB502B28DAC80094D448 /* ViewModel */,
 				ACF077722B235F6500A3BFDE /* EditProfile */,
 				ACEA93622B1FBF89004EE2E9 /* Model */,
 				ACEA935A2B1FAF58004EE2E9 /* View */,
@@ -516,10 +530,12 @@
 				ACEA93522B1FAD96004EE2E9 /* ActivityView.swift in Sources */,
 				AC042B1D2B275EA2003A0A70 /* RegistrationViewModel.swift in Sources */,
 				ACF077742B235F7B00A3BFDE /* EditProfileView.swift in Sources */,
+				ACA9AB522B28DAD70094D448 /* PofileViewModel.swift in Sources */,
 				ACEA93492B1FACC4004EE2E9 /* FeedView.swift in Sources */,
 				AC042B232B279DBD003A0A70 /* ContentViewModel.swift in Sources */,
 				ACEA934C2B1FAD04004EE2E9 /* ExploreView.swift in Sources */,
 				ACEA93662B1FBFBC004EE2E9 /* ProfileThreadFilter.swift in Sources */,
+				ACA9AB4F2B28D9BB0094D448 /* UserService.swift in Sources */,
 				AC3502042B0FA4F700DA0C52 /* ThreadsButtonModifier.swift in Sources */,
 				ACEA93552B1FADC3004EE2E9 /* ProfileView.swift in Sources */,
 				ACEA93462B1FA97E004EE2E9 /* ThreadsTabView.swift in Sources */,
