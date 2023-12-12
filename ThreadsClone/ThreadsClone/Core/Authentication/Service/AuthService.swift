@@ -6,6 +6,7 @@
 //
 
 import Firebase
+import FirebaseFirestoreSwift
 
 class AuthService {
     
@@ -16,23 +17,21 @@ class AuthService {
     init() {
         self.userSession = Auth.auth().currentUser
     }
-    
     @MainActor
     func login(withemail email: String, password: String) async throws {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
-            print("DEBUG: Create user \(result.user.uid)")
         } catch {
             print("DEBUG: Failed to create user with error \(error.localizedDescription)")
         }
     }
-    
+    @MainActor
     func createUser(withemail email: String, password: String, fullName: String, userName: String) async throws {
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.userSession = result.user
-            print("DEBUG: Create user \(result.user.uid)")
+            try await uploadUserData(withEmail: email, fullName: fullName, userName: userName, id: result.user.uid)
         } catch {
             print("DEBUG: Failed to create user with error \(error.localizedDescription)")
         }
@@ -41,5 +40,11 @@ class AuthService {
     func signOut() {
         try? Auth.auth().signOut()
         self.userSession = nil
+    }
+    
+    private func uploadUserData(withEmail: String, fullName: String, userName: String, id: String) async throws {
+        let user = User(id: id, fullName: fullName, email: withEmail, userName: userName)
+        guard let userData = try? Firestore.Encoder().encode(user) else { return }
+        try await Firestore.firestore().collection("users").document(id).setData(userData)
     }
 }

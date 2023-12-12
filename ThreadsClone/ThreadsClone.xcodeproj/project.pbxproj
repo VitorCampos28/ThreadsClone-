@@ -47,6 +47,7 @@
 		AC4BD0062B0D22520070F1B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4BD0052B0D22520070F1B8 /* Assets.xcassets */; };
 		AC4BD00A2B0D22520070F1B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4BD0092B0D22520070F1B8 /* Preview Assets.xcassets */; };
 		ACA9AB492B2887690094D448 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACA9AB482B2887690094D448 /* GoogleService-Info.plist */; };
+		ACA9AB4B2B28AF770094D448 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA9AB4A2B28AF770094D448 /* User.swift */; };
 		ACEA93462B1FA97E004EE2E9 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA93452B1FA97E004EE2E9 /* ThreadsTabView.swift */; };
 		ACEA93492B1FACC4004EE2E9 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA93482B1FACC4004EE2E9 /* FeedView.swift */; };
 		ACEA934C2B1FAD04004EE2E9 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA934B2B1FAD04004EE2E9 /* ExploreView.swift */; };
@@ -76,6 +77,7 @@
 		AC4BD0072B0D22520070F1B8 /* ThreadsClone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThreadsClone.entitlements; sourceTree = "<group>"; };
 		AC4BD0092B0D22520070F1B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACA9AB482B2887690094D448 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACA9AB4A2B28AF770094D448 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ACEA93452B1FA97E004EE2E9 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 		ACEA93482B1FACC4004EE2E9 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		ACEA934B2B1FAD04004EE2E9 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		AC3501F52B0F930600DA0C52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ACA9AB4A2B28AF770094D448 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				AC3502042B0FA4F700DA0C52 /* ThreadsButtonModifier.swift in Sources */,
 				ACEA93552B1FADC3004EE2E9 /* ProfileView.swift in Sources */,
 				ACEA93462B1FA97E004EE2E9 /* ThreadsTabView.swift in Sources */,
+				ACA9AB4B2B28AF770094D448 /* User.swift in Sources */,
 				AC3501FD2B0F938A00DA0C52 /* LoginView.swift in Sources */,
 				AC042B1F2B2794C5003A0A70 /* AuthService.swift in Sources */,
 				ACEA935F2B1FBB81004EE2E9 /* CircularProfileImageView.swift in Sources */,
