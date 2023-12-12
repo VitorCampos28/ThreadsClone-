@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC042AE22B275983003A0A70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC042AE12B275983003A0A70 /* GoogleService-Info.plist */; };
 		AC042AE52B275B97003A0A70 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AC042AE42B275B97003A0A70 /* FirebaseAnalytics */; };
 		AC042AE72B275B97003A0A70 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = AC042AE62B275B97003A0A70 /* FirebaseAnalyticsOnDeviceConversion */; };
 		AC042AE92B275B97003A0A70 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC042AE82B275B97003A0A70 /* FirebaseAnalyticsSwift */; };
@@ -38,6 +37,7 @@
 		AC042B1D2B275EA2003A0A70 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC042B1C2B275EA2003A0A70 /* RegistrationViewModel.swift */; };
 		AC042B1F2B2794C5003A0A70 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC042B1E2B2794C5003A0A70 /* AuthService.swift */; };
 		AC042B232B279DBD003A0A70 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC042B222B279DBD003A0A70 /* ContentViewModel.swift */; };
+		AC042B252B27A351003A0A70 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC042B242B27A351003A0A70 /* LoginViewModel.swift */; };
 		AC3501FD2B0F938A00DA0C52 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3501FC2B0F938A00DA0C52 /* LoginView.swift */; };
 		AC3501FF2B0FA08100DA0C52 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3501FE2B0FA08100DA0C52 /* RegistrationView.swift */; };
 		AC3502022B0FA2CB00DA0C52 /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3502012B0FA2CB00DA0C52 /* ThreadsTextFieldModifier.swift */; };
@@ -60,10 +60,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC042AE12B275983003A0A70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC042B1C2B275EA2003A0A70 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AC042B1E2B2794C5003A0A70 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		AC042B222B279DBD003A0A70 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		AC042B242B27A351003A0A70 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AC3501FC2B0F938A00DA0C52 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AC3501FE2B0FA08100DA0C52 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		AC3502012B0FA2CB00DA0C52 /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
@@ -129,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				AC042B1C2B275EA2003A0A70 /* RegistrationViewModel.swift */,
+				AC042B242B27A351003A0A70 /* LoginViewModel.swift */,
 			);
 			path = "ViewModel ";
 			sourceTree = "<group>";
@@ -273,7 +274,6 @@
 				AC3501F42B0F930300DA0C52 /* Services */,
 				AC3501F32B0F92F800DA0C52 /* Utils */,
 				AC4BD0052B0D22520070F1B8 /* Assets.xcassets */,
-				AC042AE12B275983003A0A70 /* GoogleService-Info.plist */,
 				AC4BD0072B0D22520070F1B8 /* ThreadsClone.entitlements */,
 				AC4BD0082B0D22520070F1B8 /* Preview Content */,
 			);
@@ -496,7 +496,6 @@
 			files = (
 				AC4BD00A2B0D22520070F1B8 /* Preview Assets.xcassets in Resources */,
 				AC4BD0062B0D22520070F1B8 /* Assets.xcassets in Resources */,
-				AC042AE22B275983003A0A70 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +526,7 @@
 				AC3502022B0FA2CB00DA0C52 /* ThreadsTextFieldModifier.swift in Sources */,
 				AC4BD0022B0D22510070F1B8 /* ThreadsCloneApp.swift in Sources */,
 				AC3501FF2B0FA08100DA0C52 /* RegistrationView.swift in Sources */,
+				AC042B252B27A351003A0A70 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
