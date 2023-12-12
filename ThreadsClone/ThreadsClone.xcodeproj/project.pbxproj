@@ -46,6 +46,7 @@
 		AC4BD0042B0D22510070F1B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4BD0032B0D22510070F1B8 /* ContentView.swift */; };
 		AC4BD0062B0D22520070F1B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4BD0052B0D22520070F1B8 /* Assets.xcassets */; };
 		AC4BD00A2B0D22520070F1B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4BD0092B0D22520070F1B8 /* Preview Assets.xcassets */; };
+		ACA9AB492B2887690094D448 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACA9AB482B2887690094D448 /* GoogleService-Info.plist */; };
 		ACEA93462B1FA97E004EE2E9 /* ThreadsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA93452B1FA97E004EE2E9 /* ThreadsTabView.swift */; };
 		ACEA93492B1FACC4004EE2E9 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA93482B1FACC4004EE2E9 /* FeedView.swift */; };
 		ACEA934C2B1FAD04004EE2E9 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA934B2B1FAD04004EE2E9 /* ExploreView.swift */; };
@@ -74,6 +75,7 @@
 		AC4BD0052B0D22520070F1B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC4BD0072B0D22520070F1B8 /* ThreadsClone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThreadsClone.entitlements; sourceTree = "<group>"; };
 		AC4BD0092B0D22520070F1B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACA9AB482B2887690094D448 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACEA93452B1FA97E004EE2E9 /* ThreadsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTabView.swift; sourceTree = "<group>"; };
 		ACEA93482B1FACC4004EE2E9 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		ACEA934B2B1FAD04004EE2E9 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				AC3501F42B0F930300DA0C52 /* Services */,
 				AC3501F32B0F92F800DA0C52 /* Utils */,
 				AC4BD0052B0D22520070F1B8 /* Assets.xcassets */,
+				ACA9AB482B2887690094D448 /* GoogleService-Info.plist */,
 				AC4BD0072B0D22520070F1B8 /* ThreadsClone.entitlements */,
 				AC4BD0082B0D22520070F1B8 /* Preview Content */,
 			);
@@ -496,6 +499,7 @@
 			files = (
 				AC4BD00A2B0D22520070F1B8 /* Preview Assets.xcassets in Resources */,
 				AC4BD0062B0D22520070F1B8 /* Assets.xcassets in Resources */,
+				ACA9AB492B2887690094D448 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

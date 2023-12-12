@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var viewModel = ContentViewModel()
+    @StateObject var viewModel = ContentViewModel()
     
     var body: some View {
         if viewModel.userSession != nil {
