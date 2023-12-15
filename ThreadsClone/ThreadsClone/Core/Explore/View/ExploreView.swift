@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct ExploreView: View {
+    @StateObject var viewModel = ExploreViewModel()
     @State private var searchText = ""
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack(content: {
-                    ForEach(1...10, id: \.self) { count in
+                    ForEach(viewModel.users) { count in
                         VStack {
                             UserCell()
                             
