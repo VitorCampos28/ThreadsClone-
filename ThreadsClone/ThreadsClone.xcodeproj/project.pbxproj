@@ -310,6 +310,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AC54B53F2B34ACBF00F88D46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACF077732B235F7B00A3BFDE /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AC635B9E2B2CD26D004FE658 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,7 +474,7 @@
 		ACF077722B235F6500A3BFDE /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
-				ACF077732B235F7B00A3BFDE /* EditProfileView.swift */,
+				AC54B53F2B34ACBF00F88D46 /* View */,
 			);
 			path = EditProfile;
 			sourceTree = "<group>";
