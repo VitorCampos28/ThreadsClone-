@@ -9,11 +9,12 @@ import SwiftUI
 import PhotosUI
 
 struct EditProfileView: View {
+    let user: User
     @State private var bio = ""
     @State private var link = ""
     @State private var isPrivateProfile = false
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject var viewModel: CurrentUserProfileViewModel
+    @StateObject var viewModel = EditProfileViewModel()
     
     var body: some View {
         NavigationStack {
@@ -27,7 +28,7 @@ struct EditProfileView: View {
                             Text("Name")
                                 .fontWeight(.semibold)
                             
-                            Text("Charles Leclerc")
+                            Text(user.fullName)
                         })
                         Spacer()
                         PhotosPicker(selection: $viewModel.selectedItem) {
@@ -38,7 +39,7 @@ struct EditProfileView: View {
                                     .frame(width: 40, height: 40)
                                     .clipShape(Circle())
                             } else {
-                                CircularProfileImageView()
+                                CircularProfileImageView(user: user, size: .medium)
                             }
                         }
                     })
@@ -88,7 +89,12 @@ struct EditProfileView: View {
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: {}, label: {
+                    Button(action: {
+                        Task {
+                            try await viewModel.updateUserData()
+                            dismiss()
+                        }
+                    }, label: {
                         Text("Done")
                     })
                     .font(.subheadline)
@@ -100,6 +106,8 @@ struct EditProfileView: View {
     }
 }
 
-#Preview {
-    EditProfileView()
+struct EditProfileView_Previews: PreviewProvider {
+    static var previews: some View {
+        EditProfileView(user: dev.user)
+    }
 }
