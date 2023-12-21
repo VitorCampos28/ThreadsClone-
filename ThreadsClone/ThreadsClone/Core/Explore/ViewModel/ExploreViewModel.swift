@@ -16,7 +16,7 @@ class ExploreViewModel: ObservableObject {
         }
     }
     
-    
+    @MainActor
     private func fetchUsers() async throws {
         self.users = try await UserService.fetchUsers()
     }
