@@ -40,6 +40,7 @@ struct CurrentUserProfileView: View {
             }
             .sheet(isPresented: $showEditProfile, content: {
                 EditProfileView()
+                    .environmentObject(viewModel)
             })
             .scrollIndicators(.never)
             .toolbar(content: {
