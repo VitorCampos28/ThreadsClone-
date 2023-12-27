@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ThreadCell: View {
+    let thread: Thread
+    
     var body: some View {
         VStack(content: {
             HStack(alignment: .top, spacing: 12, content: {
-                CircularProfileImageView(user: nil, size: .small)
+                CircularProfileImageView(user: thread.user, size: .small)
                 
                 VStack(alignment: .leading, spacing: 4, content: {
                     HStack {
-                        Text("maxverstappen1")
+                        Text(thread.user?.userName ?? "")
                             .font(.footnote)
                         .fontWeight(.semibold)
                         
@@ -31,8 +33,8 @@ struct ThreadCell: View {
                         })
                     }
                     
-                    Text("Freedom Lover")
-                        .font(.footnote)
+                    Text(thread.caption)
+                        .font(.caption)
                         .multilineTextAlignment(.leading)
                     
                     HStack(spacing: 16, content: {
@@ -59,6 +61,8 @@ struct ThreadCell: View {
     }
 }
 
-#Preview {
-    ThreadCell()
+struct ThreadCell_Previews: PreviewProvider {
+    static var previews: some View {
+        ThreadCell(thread: dev.thread)
+    }
 }
